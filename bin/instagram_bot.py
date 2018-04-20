@@ -47,7 +47,7 @@ try:
     # like all photos with these tags
     session.like_by_tags(
         [
-            'perl',
+            'perl5',
             'perl6',
             'c',
             'code',
