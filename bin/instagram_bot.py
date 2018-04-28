@@ -29,7 +29,7 @@ session.set_do_follow(
 
 # unfollow users who don't follow us
 session.unfollow_users(
-    amount=100,
+    amount=250,
     onlyNotFollowMe=True,
     onlyInstapyMethod='FIFO',
     sleep_delay=60
