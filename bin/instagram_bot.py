@@ -20,6 +20,11 @@ session = InstaPy(
 )
 session.login()
 
+# don't use the relationship bounds check
+session.set_relationship_bounds(
+    enabled=False
+)
+
 # follow everyone we like
 session.set_do_follow(
     enabled=True,
