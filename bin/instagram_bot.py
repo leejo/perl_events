@@ -28,7 +28,7 @@ session.set_relationship_bounds(
 # follow everyone we like
 session.set_do_follow(
     enabled=True,
-    percentage=100,
+    percentage=75,
     times=2
 )
 
@@ -36,8 +36,8 @@ session.set_do_follow(
 session.unfollow_users(
     amount=750,
     nonFollowers=True,
-    InstapyFollowed=(True, "all"),
-    sleep_delay=60
+    style="RANDOM",
+    unfollow_after=42*60*60
 )
 
 # but don't unfollow if they've liked one of our last 3 posts
