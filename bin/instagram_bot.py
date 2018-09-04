@@ -1,12 +1,12 @@
 import sys
-sys.path.append('../../InstaPy')
+sys.path.append('/Users/lee/working/InstaPy/assets')
 
 from instapy import InstaPy
 
 insta_username = ''
 insta_password = ''
 
-for line in open( '../../.perl_events_instagram.cred' ):
+for line in open( '/Users/lee/working/.perl_events_instagram_bot.cred' ):
     if insta_username == '':
         insta_username = line.rstrip()
     else:
@@ -36,8 +36,8 @@ session.set_do_follow(
 session.unfollow_users(
     amount=750,
     nonFollowers=True,
-    InstapyFollowed=(True, "all"),
-    sleep_delay=60
+    style="RANDOM",
+    sleep_delay=60,
 )
 
 # but don't unfollow if they've liked one of our last 3 posts
