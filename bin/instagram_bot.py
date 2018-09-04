@@ -28,7 +28,7 @@ session.set_relationship_bounds(
 # follow everyone we like
 session.set_do_follow(
     enabled=True,
-    percentage=100,
+    percentage=75,
     times=2
 )
 
