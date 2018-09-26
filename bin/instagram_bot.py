@@ -48,65 +48,62 @@ session.set_dont_unfollow_active_users(
 
 # note - keep sum of all likes to < 300 per hour
 
-try:
-    # like all photos with these tags
-    session.like_by_tags(
-        [
-            # perl!
-            'perl5',
-            'perl6',
+# like all photos with these tags
+session.like_by_tags(
+    [
+        # perl!
+        'perl5',
+        'perl6',
 
-            # the rest
-            'coding',
-            'codingbootcamp',
-            'codingisfun',
-            'codinglife',
-            'computerengineering',
-            'computerprogramming',
-            'computing',
-            'cprogramming',
-            'creativecoding',
-            'development',
-            'erlang',
-            'girlswhocode',
-            'github',
-            'golang',
-            'hack',
-            'hacker',
-            'java',
-            'javascript',
-            'linux',
-            'opensource',
-            'php',
-            'programmer',
-            'programming',
-            'programmingisfun',
-            'programminglanguage',
-            'programminglanguages',
-            'programminglife',
-            'programmingstudents',
-            'python',
-            'rubyprogramming',
-            'software',
-            'softwaredeveloper',
-            'softwaredevelopers',
-            'softwaredevelopment',
-            'softwareengineer',
-            'softwareengineering',
-            'softwareengineers',
-            'softwares',
-            'startup',
-            'tech',
-            'webdevelopment',
-            'webprogramming',
-            'womenintech',
-            'womenwhocode',
-        ],
-        skip_top_posts=False,
-        amount=25
-    )
-except:
-    print "Problem liking tags"
+        # the rest
+        'coding',
+        'codingbootcamp',
+        'codingisfun',
+        'codinglife',
+        'computerengineering',
+        'computerprogramming',
+        'computing',
+        'cprogramming',
+        'creativecoding',
+        'development',
+        'erlang',
+        'girlswhocode',
+        'github',
+        'golang',
+        'hack',
+        'hacker',
+        'java',
+        'javascript',
+        'linux',
+        'opensource',
+        'php',
+        'programmer',
+        'programming',
+        'programmingisfun',
+        'programminglanguage',
+        'programminglanguages',
+        'programminglife',
+        'programmingstudents',
+        'python',
+        'rubyprogramming',
+        'software',
+        'softwaredeveloper',
+        'softwaredevelopers',
+        'softwaredevelopment',
+        'softwareengineer',
+        'softwareengineering',
+        'softwareengineers',
+        'softwares',
+        'startup',
+        'tech',
+        'webdevelopment',
+        'webprogramming',
+        'womenintech',
+        'womenwhocode',
+    ],
+    skip_top_posts=True,
+    amount=10
+)
 
 # end the bot session
 session.end()
