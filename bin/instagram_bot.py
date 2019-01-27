@@ -28,22 +28,16 @@ session.set_relationship_bounds(
 # follow everyone we like
 session.set_do_follow(
     enabled=True,
-    percentage=75,
+    percentage=100,
     times=2
 )
 
 # unfollow users who don't follow us
 session.unfollow_users(
-    amount=750,
+    amount=1000,
     nonFollowers=True,
     style="RANDOM",
     sleep_delay=60,
-)
-
-# but don't unfollow if they've liked one of our last 3 posts
-session.set_dont_unfollow_active_users(
-    enabled=True,
-    posts=3
 )
 
 # note - keep sum of all likes to < 300 per hour
