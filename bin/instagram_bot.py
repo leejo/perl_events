@@ -25,6 +25,11 @@ session.set_relationship_bounds(
     enabled=False
 )
 
+session.set_delimit_liking(
+    enabled=True,
+    max=300, min=0
+)
+
 # follow everyone we like
 session.set_do_follow(
     enabled=True,
@@ -96,7 +101,7 @@ session.like_by_tags(
         'womenwhocode',
     ],
     skip_top_posts=True,
-    amount=10
+    amount=19
 )
 
 # end the bot session
