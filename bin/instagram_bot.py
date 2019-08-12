@@ -57,8 +57,6 @@ session.like_by_tags(
         # the rest
         'coding',
         'codingbootcamp',
-        'codingisfun',
-        'codinglife',
         'computerengineering',
         'computerprogramming',
         'computing',
@@ -78,7 +76,6 @@ session.like_by_tags(
         'php',
         'programmer',
         'programming',
-        'programmingisfun',
         'programminglanguage',
         'programminglanguages',
         'programminglife',
